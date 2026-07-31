@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIMABSEN KKN</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SIMABSEN KKN</h1>
+
+<p>Universitas Muhammadiyah Bengkulu</p>
+
+<div id="home">
+
+<button id="mulai">
+Mulai Absensi
+</button>
+
+</div>
+
+<div id="login" style="display:none;">
+
+<h2>Login</h2>
+
+<input
+type="text"
+id="username"
+placeholder="Username">
+
+<br><br>
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<br><br>
+
+<button id="loginBtn">
+Login
+</button>
+
+</div>
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+<div class="headerDashboard">
+
+<h2>👋 Selamat Datang</h2>
+
+<p><b>SIMABSEN KKN</b></p>
+
+<p id="roleAdmin"></p>
+
+</div>
+
+  <p id="roleAdmin"></p>bn
+<button id="scan">
+📷 Scan QR
+</button>
+
+<br><br>
+<button id="generateQR">
+🧾 Generate QR
+</button>
+
+<br><br>
+<button id="anggota">
+👥 Data Anggota
+</button>
+
+<br><br>
+
+<button id="rekap">
+📊 Rekap Kehadiran
+</button>
+
+<br><br>
+
+<button id="logout">
+🚪 Logout
+</button>
+
+</div>
+<!-- DATA ANGGOTA -->
+<div id="dataAnggota" style="display:none;">
+
+<h2>Daftar Anggota KKN</h2>
+<input
+type="text"
+id="cariAnggota"
+placeholder="🔍 Cari nama anggota...">
+
+<br><br>
+<div id="listAnggota"></div>
+
+<br><br>
+
+<button id="kembaliDashboard">
+⬅ Kembali
+</button>
+
+</div>
+
+
+<!-- SCAN QR -->
+<div id="scanPage" style="display:none;">
+
+<h2>📷 Scan QR</h2>
+
+<div id="reader"></div>
+
+<br>
+
+<div id="hasilScan"></div>
+
+<br>
+
+<button id="kembaliScan">
+⬅ Kembali
+</button>
+
+</div>
+  <!-- GENERATE QR -->
+<div id="generateQRPage" style="display:none;">
+
+<h2>🧾 Generate QR</h2>
+<button id="downloadPDF">📄 Download Semua QR (PDF)</button>
+<div id="qrContainer"></div>
+
+<br>
+
+<button id="kembaliGenerate">
+⬅ Kembali
+</button>
+
+</div>
+  <!-- REKAP KEHADIRAN -->
+<div id="rekapPage" style="display:none;">
+
+<h2>📊 Rekap Kehadiran</h2>
+
+<div id="rekapList"></div>
+
+<br>
+
+  <button id="exportExcel">
+📥 Export Excel
+</button>
+  
+<button id="kembaliRekap">
+⬅ Kembali
+</button>
+
+</div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+
+</html>

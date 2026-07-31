@@ -1,0 +1,179 @@
+/* =========================
+   SIMABSEN KKN
+   Tema Cream Elegant
+========================= */
+
+body{
+margin:0;
+padding:0;
+background:#F8F3EA;
+font-family:'Poppins',Arial,sans-serif;
+}
+
+.container{
+max-width:430px;
+margin:30px auto;
+padding:20px;
+background:#fff;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+h1{
+font-size:34px;
+color:#7B5E57;
+margin-bottom:5px;
+}
+
+h2{
+color:#7B5E57;
+margin-bottom:15px;
+}
+
+h3{
+margin:8px 0;
+color:#7B5E57;
+}
+
+p{
+color:#666;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:8px;
+background:#7B5E57;
+color:white;
+border:none;
+border-radius:14px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#5f463f;
+transform:translateY(-2px);
+}
+
+input{
+width:100%;
+padding:13px;
+margin:8px 0;
+border-radius:12px;
+border:1px solid #ddd;
+font-size:15px;
+box-sizing:border-box;
+background:#FCFAF7;
+}
+
+.card{
+background:#FFFDF9;
+border-left:5px solid #C9A227;
+padding:15px;
+margin:15px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:left;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+}
+
+.card b{
+color:#7B5E57;
+font-size:16px;
+}
+
+.card p{
+margin:5px 0;
+font-size:14px;
+}
+
+#cariAnggota{
+width:100%;
+}
+
+#reader{
+width:100%;
+max-width:320px;
+margin:auto;
+border-radius:15px;
+overflow:hidden;
+border:3px solid #C9A227;
+}
+
+#hasilScan{
+margin-top:15px;
+padding:15px;
+background:#FFFDF9;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+#qrContainer{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+#qrContainer .card{
+text-align:center;
+}
+
+#qrContainer canvas{
+margin:auto;
+display:block;
+padding:10px;
+background:white;
+border-radius:10px;
+}
+
+#rekapList{
+margin-top:20px;
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#C9A227;
+border-radius:20px;
+}
+/* ===== HEADER DASHBOARD ===== */
+
+.headerDashboard{
+background:#F3E8D3;
+padding:18px;
+border-radius:18px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.headerDashboard h2{
+margin:0;
+color:#6D4C41;
+}
+
+.headerDashboard p{
+margin:5px 0;
+color:#7B5E57;
+}
+
+#roleAdmin{
+display:inline-block;
+background:#C9A227;
+color:white;
+padding:6px 14px;
+border-radius:30px;
+font-size:13px;
+font-weight:bold;
+margin-top:8px;
+}
